@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="constructor.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>"LIBRARY"</title>
+</head>
+<body>
+    <h1><span class="quotations">"</span>Library<span class="quotations">"</span></h1>
+    <div class="bookShelf">
+    </div>
+    <button class="button" type="submit" id="addBook-btn" title="ADD BOOK">+</button>
+
+
+    <div class="popup">
+        <div class="popup-content">
+            <h1><span class="paranthesis">"</span>Add Book<span class="paranthesis">"</span></h1>
+            <form id="form">
+                <label for="title">Book Title:</label>
+                <input type="text" name="title" id="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" required>
+
+                <label for="pages">Pages:</label>
+                <input type="number" name="pages" id="pages" min=0 required>
+
+                <label for="isRead">Have you Read This?</label>
+                <select id="isRead" name="isRead">
+                    <option value="false" id="false">NOT READ</option>
+                    <option value="true" id="true">READ</option>
+                </select>
+                <div class="popup-btns">
+                    <button type="submit" id="add-btn">Add</button>
+                    <button type="reset" id="reset-btn">Clear</button>
+                </div>  
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+/*resets css */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+/*css for headers */
+h1{
+    text-align: center;
+    border-bottom: .5px solid silver;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 20px;
+}
+/*updates font on paranthesis */
+.quotations {
+    font-family: Futura;
+}
+
+/*css for the webpage font styling and background color */
+body {
+    background-color: #f5f5f5;
+    font-family:  Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/*css for bookshelf container div */
+.bookShelf {
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr) ) ;
+
+}
+/* styling for each individual book container */
+.book-div {
+    border: 1px solid black;
+    height: 250px;
+    border-radius: 5px;
+    background-color: silver;
+    position: relative;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    padding-left: 25px;
+}
+
+/* css for close button on each book div */
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: silver;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*css for pop up container // darkens screen when add book button pressed */
+.popup {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+/*css for add book form */
+.popup-content {
+    height: 475px;
+    width: 450px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/*css for options in add book form */
+input, select {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 25px;
+    width: 330px;
+    border: .5px solid silver;
+}
+/*css for form*/
+form {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/*css for form button*/
+form button {
+    font-size: 1rem;
+    padding: 10px;
+    width: 110px;
+    border: .5px solid black;
+    background-color: #ccc;
+    color: green;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-family:  Helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* adds hover for buttons */
+form button:hover, #addBook-btn:hover {
+    color: green;
+    background-color: black;
+    transition: 0.2s;
+}
+
+/*center aligns buttons in form */
+.popup-btns {
+    text-align: center;
+}
+
+/* css for selected fields in form*/
+form :focus {
+    outline: none;
+    border: 1.5px solid black;
+}
+/* css for add book button*/
+#addBook-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; 
+    width: 50px;  
+    border-radius: 50%;
+    background-color: #ccc;
+    border: .5px solid black;
+    color: green;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: green;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+   
+  input:checked + .slider {
+    background-color: black;
+    border: 1px solid green;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px white;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    border: .5px solid black;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* css for the toggle div in each book container */
+  .switch-div {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+  }
