@@ -12,5 +12,5 @@ Fundamentals I've learned from this project:
 - CSS GRID minmax and auto fill
 - using forms and accessing fields from it via JS 
 - positioning in CSS 
-- DEBUGGING haha
+- <strong>DEBUGGING</strong> haha
 
