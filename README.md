@@ -5,7 +5,7 @@ The css styling of the div will change depending on if the user marks if the boo
 
 Fundamentals I've learned from this project: 
 
-- Greater understanding of transversing the dom. 
+- Greater understanding of traversing the dom. 
 - That text nodes are leaves but can be accessed because each node sets up essentially an array
   of its children. 
 - accessing current style elements of nodes as a string via JS. 
